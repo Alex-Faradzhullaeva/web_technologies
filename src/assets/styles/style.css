@@ -30,7 +30,8 @@ h4 {
     color: #1F3F68;
 }
 
-input {
+input,
+textarea {
     border: 1px solid #356EAD;
     box-sizing: border-box;
     border-radius: 10px;
@@ -69,13 +70,13 @@ button {
 
 .breadcrumbs {
     display: flex;
-    background: linear-gradient(to bottom, #e3eeed, #5c9792);
+    background: linear-gradient(to bottom, #e3eeed, #E6399B);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .breadcrumbs a {
     padding: 12px 40px 12px 30px;
-    color: #1A2B2A;
+    color: #600c3d;
     text-decoration: none;
     font-family: "Times New Roman", serif;
     border-right: 2px solid #FFFFFF;
