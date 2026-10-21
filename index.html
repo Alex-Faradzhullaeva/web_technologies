@@ -3,267 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>web_lb3</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="site-header">
-        <p class="site-header_logo">IT WEBSITE</p>
-        <nav class="site-header_nav" aria-label="Main navigation">
-            <ul class="site-header_menu">
-                <li class="site-header_menu-item">
-                    <a href="#service" class="site-header_link">Services</a>
-                </li>
-                <li class="site-header_menu-item">
-                    <a href="#media" class="site-header_link">Media</a>
-                </li>
-                <li class="site-header_menu-item">
-                    <a href="#faq" class="site-header_link">FAQ</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <hr>
-    <main class="main-content">
-        <section class="hero" id="hero">
-            <h1 class="hero_title">
-                Development of mobile applications and web services of any complexity
-            </h1>
-            <p class="hero_description">
-                We create reliable digital products for business and people.
-            </p>
-            <ul class="hero_features">
-                <li class="hero_feature-item">Mobile applications</li>
-                <li class="hero_feature-item">Web services</li>
-                <li class="hero_feature-item">UI/UX design</li>
-            </ul>
-            <img class="hero_image" src="" alt="Development illustration">
-        </section>
+    <div class="page_background">
+        <header class="site-header">
+            <p class="site-header_logo">IT WEBSITE</p>
+            <nav class="site-header_nav" aria-label="Main navigation">
+                <a href="#service" class="site-header_a">Services</a>
+                <a href="#media" class="site-header_a">Media</a>
+                <a href="#faq" class="site-header_a">FAQ</a>
+                <a href="#cases" class="site-header_a">Cases</a>
+                <a href="#contacts" class="site-header_a">Contacts</a>
+            </nav>
+        </header>
         <hr>
-        <section class="consultation" id="consultation">
-            <h2 class="consultation_title">Get a consultation</h2>
-            <p class="consultation_description">
-                Leave your contacts and we will call you back within 15 minutes.
-            </p>
-            <form class="consultation_form">
-                <div class="consultation_fields">
-                    <div class="form-group">
-                        <label class="form-group_label" for="consult-phone">Phone number</label>
-                        <input class="form-group_input" id="consult-phone" type="tel" placeholder="+7 (___) ___ __ __">
+        <main class="main-content">
+            <section class="hero" id="hero">
+                <h1 class="hero_title">
+                    Development of <span class='text_blue'> mobile applications </span>and <span class='text_blue'>web services </span>of any complexity
+                </h1>
+                <p class="hero_description">
+                    We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices
+                </p>
+            </section>
+            <hr>
+            <section class="consultation" id="consultation">
+                <p class="consultation_description">
+                    Leave your contacts and we will call you back within 15 minutes.
+                </p>
+                <form class="consultation_form">
+                    <div class="consultation_fields">
+                        <div class="form-group">
+                            <label class="form-group_label">
+                                Phone number
+                            </label>
+                            <div class="input_flag">
+                                <img src="img/kazahstan.png" class="flag-icon">
+                                <input type="tel" placeholder="+7 (___) ___ __ __">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-group_label">
+                                Full name
+                            </label>
+                            <input type="text" placeholder="Ivan Ivanov">
+                        </div>
+                        <button class="btn_primary" type="submit">
+                            Get consultation
+                        </button>
                     </div>
-                    <div class="form-group">
-                        <label class="form-group_label" for="consult-name">Full name</label>
-                        <input class="form-group_input" id="consult-name" type="text" placeholder="Ivan Ivanov">
-                    </div>
-                </div>
-                <button class="btn btn_primary" type="submit">Get consultation</button>
-            </form>
-        </section>
-        <hr>
-        <section class="cycle" id="cycle">
-            <div class="cycle_info">
-                <h2 class="cycle_title">Full development cycle</h2>
-                <p class="cycle_subtitle">We use proven technologies</p>
 
-                <h3 class="cycle_category">Web</h3>
-                <p class="cycle_text">
-                    PHP / Javascript / Node.JS / Web Socket / Socket.io / Vue.js /
-                    Nuxt / MySQL / Laravel / GO lang / django / Python
-                </p>
-
-                <h3 class="cycle_category">Mobile</h3>
-                <p class="cycle_text">
-                    Swift / Kotlin / Alamofire / Firebase / CoreData / Room / Realm /
-                    Coroutine / RxJava / RxSwift / Unit Test / Navigation
-                </p>
-            </div>
-            <div class="cycle_list-wrapper">
-                <h3 class="cycle_list-title">Directions</h3>
-                <ul class="cycle_list">
-                    <li class="cycle_list-item">iOS development</li>
-                    <li class="cycle_list-item">Android development</li>
-                    <li class="cycle_list-item">Web development</li>
-                </ul>
-            </div>
-        </section>
-        <hr>
-        <section class="stats" id="stats">
-            <h2 class="stats_title">
-                Developed more than 100 <br>
-                projects in 15 industries
-            </h2>
-            <p class="stats_description">
-                We work with companies of different scales and domains.
-            </p>
-            <div class="stats_categories">
-                <p class="stats_category">Social media</p>
-                <p class="stats_category">Fitness and sport</p>
-                <p class="stats_category">Bank</p>
-                <p class="stats_category">Construction</p>
-                <p class="stats_category">Game projects</p>
-            </div>
-        </section>
-        <hr>
-        <section class="projects" id="service">
-            <h2 class="projects_title">Projects we are proud of</h2>
-            <p class="projects_description">
-                Our software development company is truly proud of the wonderful clients we have
-                worked with. We enjoy a long-term partnership.
-            </p>
-            <div class="projects_tags">
-                <a href="#" class="projects_tag">I-teka</a>
-                <a href="#" class="projects_tag">Dauletten</a>
-                <a href="#" class="projects_tag">Guru Bosch</a>
-                <a href="#" class="projects_tag">Santo</a>
-                <a href="#" class="projects_tag">Home Credit Bank</a>
-                <a href="#" class="projects_tag">BI Partners</a>
-                <a href="#" class="projects_tag">Europharma</a>
-                <a href="#" class="projects_tag projects_tag_all">View 100 more projects</a>
-            </div>
-            <article class="project-card">
-                <h3 class="project-card_title">I-teka</h3>
-                <p class="project-card_text">
-                    The application is designed to search for drugs by availability in pharmacies in cities.
-                    During quarantine, the application helped many people, which gives more value.
-                </p>
-                <p class="project-card_tags">
-                    Business analysis / iOS / Android / QA / UI/UX Design
-                </p>
-                <img class="project-card_image" src="" alt="I-teka project preview">
-            </article>
-        </section>
-        <hr>
-        <section class="discuss" id="discuss">
-            <div class="discuss_text">
-                <h3 class="discuss_title">
-                    Let's discuss <br>
-                    Your project
-                </h3>
-                <p class="discuss_description">
-                    Let's figure out how to create an effective application,
-                    its cost and terms of its development.
-                </p>
-            </div>
-            <form class="discuss_form">
-                <div class="discuss_fields">
-                    <div class="form-group">
-                        <label class="form-group_label" for="discuss-phone">Phone number</label>
-                        <input class="form-group_input" id="discuss-phone" type="tel">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-group_label" for="discuss-name">Full name</label>
-                        <input class="form-group_input" id="discuss-name" type="text">
-                    </div>
-                </div>
-                <button class="btn btn_primary" type="submit">Discuss the project</button>
-            </form>
-        </section>
-        <hr>
-        <section class="stages" id="stages">
-            <h2 class="stages_title">Application Development Stages</h2>
-            <p class="stages_description">
-                Every project goes through a transparent and controlled process.
-            </p>
-            <div class="stages_list">
-                <div class="stages_card">
-                    <h3 class="stages_card-title">Analysis</h3>
-                    <p class="stages_card-text">Requirements and scope definition.</p>
-                </div>
-                <div class="stages_card">
-                    <h3 class="stages_card-title">Design</h3>
-                    <p class="stages_card-text">UI/UX prototypes and visual design.</p>
-                </div>
-                <div class="stages_card">
-                    <h3 class="stages_card-title">Development</h3>
-                    <p class="stages_card-text">Backend and frontend implementation.</p>
-                </div>
-                <div class="stages_card">
-                    <h3 class="stages_card-title">Testing</h3>
-                    <p class="stages_card-text">QA and bug fixing.</p>
-                </div>
-                <div class="stages_card">
-                    <h3 class="stages_card-title">Launching</h3>
-                    <p class="stages_card-text">Release to production.</p>
-                </div>
-                <div class="stages_card">
-                    <h3 class="stages_card-title">Support</h3>
-                    <p class="stages_card-text">Maintenance and improvements.</p>
-                </div>
-            </div>
-        </section>
-        <hr>
-        <section class="team" id="team">
-            <h2 class="team_title">Our team</h2>
-            <p class="team_description">
-                Thousand is a full-cycle digital production company with its own product analytics,
-                design, web and mobile development.
-            </p>
-            <ul class="team_list">
-                <li class="team_member">Product analyst</li>
-                <li class="team_member">UI/UX designer</li>
-                <li class="team_member">Web developer</li>
-                <li class="team_member">Mobile developer</li>
-                <li class="team_member">QA engineer</li>
-            </ul>
-            <img class="team_image" src="" alt="Our team">
-        </section>
-        <hr>
-        <section class="ebook" id="media">
-            <h2 class="ebook_title">
-                Get the book for free by leaving your contacts
-            </h2>
-            <p class="ebook_description">
-                We will send a PDF guide about mobile app development to your email.
-            </p>
-            <form class="ebook_form">
-                <div class="ebook_fields">
-                    <div class="form-group">
-                        <label class="form-group_label" for="ebook-phone">Phone number</label>
-                        <input class="form-group_input" id="ebook-phone" type="tel">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-group_label" for="ebook-name">Full name</label>
-                        <input class="form-group_input" id="ebook-name" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-group_label" for="ebook-email">Email</label>
-                        <input class="form-group_input" id="ebook-email" type="email">
-                    </div>
-                </div>
-                <button class="btn btn_primary" type="submit">Send me ebook to my mail</button>
-            </form>
-        </section>
-        <hr>
-        <section class="faq" id="faq">
-            <h2 class="faq_title">FAQ</h2>
-            <p class="faq_description">Answers to the most frequent questions.</p>
-            <div class="faq_content">
-                <article class="faq_card">
-                    <h3 class="faq_card-title">What is the cost of a mobile application?</h3>
-                    <p class="faq_card-text">The cost depends on the scope of features and platforms.</p>
-                </article>
-                <article class="faq_card">
-                    <h3 class="faq_card-title">Do you provide a guarantee for the mobile application?</h3>
-                    <p class="faq_card-text">Yes, we provide warranty support after the release.</p>
-                </article>
-                <article class="faq_card">
-                    <h3 class="faq_card-title">How long will development take?</h3>
-                    <p class="faq_card-text">From several weeks to several months depending on the project.</p>
-                </article>
-                <article class="faq_card">
-                    <h3 class="faq_card-title">I will not tell my idea, do you guarantee confidentiality?</h3>
-                    <p class="faq_card-text">Yes, we sign an NDA before discussing the details.</p>
-                </article>
-            </div>
-        </section>
-        <hr>
-        <aside class="extra-info" id="extra">
-            <h2 class="extra-info_title">Useful links</h2>
-            <ul class="extra-info_list">
-                <li class="extra-info_item"><a href="#" class="extra-info_link">Blog</a></li>
-                <li class="extra-info_item"><a href="#" class="extra-info_link">Case studies</a></li>
-                <li class="extra-info_item"><a href="#" class="extra-info_link">Careers</a></li>
-            </ul>
-        </aside>
-    </main>
+                </form>
+            </section>
+        </main>
+    </div>
     <hr>
     <footer class="site-footer">
         <h2 class="site-footer_logo">IT WEBSITE</h2>
@@ -285,8 +79,10 @@
                 <a href="#" class="site-footer_link">Leave a request</a>
             </div>
         </div>
-        <p class="site-footer_copyright">© 2024 IT WEBSITE. All rights reserved.</p>
+        <div class="footer_down">
+            <img src="img/footer_info.png">
+            <span>We work throughout world</span>
+        </div>
     </footer>
-
 </body>
 </html>
