@@ -1,70 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>web_lb3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT WEBSITE</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="page_background">
-        <header class="site-header">
-            <p class="site-header_logo">IT WEBSITE</p>
-            <nav class="site-header_nav" aria-label="Main navigation">
-                <a href="#service" class="site-header_a">Services</a>
-                <a href="#media" class="site-header_a">Media</a>
-                <a href="#faq" class="site-header_a">FAQ</a>
-                <a href="#cases" class="site-header_a">Cases</a>
-                <a href="#contacts" class="site-header_a">Contacts</a>
-            </nav>
-        </header>
-        <hr>
-        <main class="main-content">
-            <section class="hero" id="hero">
-                <h1 class="hero_title">
-                    Development of <span class='text_blue'> mobile applications </span>and <span class='text_blue'>web services </span>of any complexity
-                </h1>
-                <p class="hero_description">
-                    We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices
-                </p>
-            </section>
-            <hr>
-            <section class="consultation" id="consultation">
-                <p class="consultation_description">
-                    Leave your contacts and we will call you back within 15 minutes.
-                </p>
-                <form class="consultation_form">
-                    <div class="consultation_fields">
-                        <div class="form-group">
-                            <label class="form-group_label">
-                                Phone number
-                            </label>
-                            <div class="input_flag">
-                                <img src="img/kazahstan.png" class="flag-icon">
-                                <input type="tel" placeholder="+7 (___) ___ __ __">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-group_label">
-                                Full name
-                            </label>
-                            <input type="text" placeholder="Ivan Ivanov">
-                        </div>
-                        <button class="btn_primary" type="submit">
-                            Get consultation
-                        </button>
-                    </div>
 
-                </form>
-            </section>
-        </main>
-    </div>
-    <hr>
-    <footer class="site-footer">
-        <h2 class="site-footer_logo">IT WEBSITE</h2>
+    <!-- ШАПКА -->
+    <header class="site-header">
+        <button class="site-header_burger" aria-label="Открыть меню">
+            <img src="img/menu.webp" alt="Меню">
+        </button>
+
+        <a href="#" class="site-header_logo">
+            <img src="img/name.png" alt="IT WEBSITE">
+        </a>
+
+        <nav class="site-header_nav" aria-label="Main navigation">
+            <ul class="site-header_nav-list">
+                <li class="site-header_nav-item"><a href="#services" class="site-header_a">Services</a></li>
+                <li class="site-header_nav-item"><a href="#media" class="site-header_a">Media</a></li>
+                <li class="site-header_nav-item"><a href="#cases" class="site-header_a">Cases</a></li>
+                <li class="site-header_nav-item"><a href="#faq" class="site-header_a">FAQ</a></li>
+                <li class="site-header_nav-item"><a href="#contacts" class="site-header_a">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <div class="site-header_contacts">
+            <a href="tel:+71111111111" class="site-header_contact-item site-header_contact-phone">
+                <img src="img/phone.png" alt="Телефон" class="contact-icon">
+                <span>+7 (111) 111-11-11</span>
+            </a>
+            <a href="tel:+71111111111" class="site-header_contact-item site-header_contact-phone">
+                <span>+7 (111) 111-11-11</span>
+            </a>
+            <a href="mailto:itcompany@mail.com" class="site-header_contact-item site-header_contact-email">
+                <img src="img/email.png" alt="Почта" class="contact-icon">
+                <span>itcompany@mail.com</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ПЕРВЫЙ ЭКРАН (HERO) -->
+        <section class="hero" id="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero_title">
+                        Development of <span class="text_blue">mobile applications</span> and <span class="text_blue">web services</span> of any complexity
+                    </h1>
+                    <p class="hero_description">We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices.</p>
+
+                    <div class="consultation">
+                        <h3 class="consultation_description">Leave your contacts and we will call you back within 30 minutes</h3>
+                        <form action="#" class="consultation_form">
+                            <div class="form-group">
+                                <label for="hero-phone">Phone number</label>
+                                <input type="tel" id="hero-phone" name="phone" placeholder="+7 (111) 111-11-11">
+                            </div>
+                            <div class="form-group">
+                                <label for="hero-name">Full name</label>
+                                <input type="text" id="hero-name" name="name" placeholder="Иван Иванов">
+                            </div>
+                            <button type="submit" class="btn_primary">Get consultation</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="hero_phones">
+                    <img src="img/scrn1.jpg" class="phone" alt="">
+                    <img src="img/scrn2.jpg" class="phone" alt="">
+                    <img src="img/scrn3.jpg" class="phone" alt="">
+                    <img src="img/scrn4.jpg" class="phone" alt="">
+                    <img src="img/scrn5.jpg" class="phone" alt="">
+                    <img src="img/scrn6.jpg" class="phone" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- ВТОРОЙ ЭКРАН (УСЛУГИ) -->
+        <section class="cycle" id="services">
+
+            <div class="cycle_info">
+                <h2 class="cycle_title">Full development cycle</h2>
+                <p class="cycle_subtitle">We use proven technologies</p>
+
+                <div class="cycle_categories">
+                    <article class="cycle_category">
+                        <h3>Web</h3>
+                        <p class="cycle_list">
+                            PHP <span>/</span> JavaScript <span>/</span> Node.JS <span>/</span> Web Socket <span>/</span> Socket.io <span>/</span> Vue.js <span>/</span>
+                            Nuxt <span>/</span> MySQL <span>/</span> Laravel <span>/</span> GO lang <span>/</span> Python
+                        </p>
+                    </article>
+
+                    <article class="cycle_category">
+                        <h3>Mobile</h3>
+                        <p class="cycle_list">
+                            Swift <span>/</span> Kotlin <span>/</span> Alamofire <span>/</span> Firebase <span>/</span> CoreData <span>/</span> Room <span>/</span> Realm <span>/</span>
+                            Coroutine <span>/</span> RxJava <span>/</span> RxSwift <span>/</span> Unit Test <span>/</span> Navigation
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="cycle_links">
+                <ul class="cycle_nav">
+                    <li><a href="#">iOS development</a></li>
+                    <li><a href="#">Android development</a></li>
+                    <li><a href="#">Web development</a></li>
+                    <li><a href="#">UI/UX design</a></li>
+                    <li><a href="#">Testing</a></li>
+                    <li><a href="#">Launch</a></li>
+                    <li><a href="#">IT consulting</a></li>
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="site-footer" id="contacts">
+        <div class="site-footer_logo">
+            <img src="img/name_footer.png" alt="IT WEBSITE">
+        </div>
+
         <div class="site-footer_content">
             <div class="site-footer_item">
                 <span class="site-footer_label">Contact nums</span>
-                <a href="tel:+77783959026" class="site-footer_link">+7 (778) 395 90 26</a>
+                <a href="tel:+77783659026" class="site-footer_link">+7 (778) 385 90 26</a>
             </div>
             <div class="site-footer_item">
                 <span class="site-footer_label">Post</span>
@@ -72,7 +139,7 @@
             </div>
             <div class="site-footer_item">
                 <span class="site-footer_label">Address</span>
-                <p class="site-footer_text">City city, street st. 90</p>
+                <span class="site-footer_text">City city, street st. 90</span>
             </div>
             <div class="site-footer_item">
                 <span class="site-footer_label">Leave a request</span>
@@ -84,5 +151,6 @@
             <span>We work throughout world</span>
         </div>
     </footer>
+
 </body>
 </html>
