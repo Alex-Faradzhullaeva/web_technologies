@@ -33,37 +33,69 @@ body {
     box-sizing: border-box;
 }
 
-.site-header_logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #0E62E6;
+.site-header_burger {
+    display: none;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.site-header_nav {
+    display: flex;
+    justify-content: center;
+}
+
+.site-header_logo img {
+    height: 24px;
+    display: block;
+}
+
+.site-header_nav-list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 .site-header_a {
-    font-family: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
-    font-size: 14px;
-    font-weight: 500; 
-    font-style: normal;
-    line-height: 18px;
-    letter-spacing: -0.15px;
-    color: #101828;     
-    text-decoration: none;    
-}
-
-.site-header_nav{
-    display: flex;
-    flex-direction: row; 
-    gap: 24px;   
-}
-
-.site-header_link {
-    text-decoration: none;
-    color: #2D66EE;
-    font-weight: 500;
     font-size: 15px;
+    color: #1F3F68;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
+.site-header_a:hover {
+    color: #4776E6;
+}
+
+.site-header_contacts {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.site-header_contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #4776E6;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contact-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.site-header_contact-item:hover {
+    color: #1F3F68;
+}
 .page_background{
     flex: 1 0 auto;
     background-size: cover;
