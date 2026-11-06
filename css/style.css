@@ -1,54 +1,53 @@
 body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+    background: #ffffff;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    font-family: "Inter", Arial, sans-serif;
-    font-size: 16px;
     min-height: 100vh;
-    margin: 0;
-    color: #101828;
-    background-color: #fffefe;
 }
 
-   /* ШАПКА */
-
-.site-header {
+/* ШАПКА */
+.header {
     position: sticky;
     top: 24px;
     z-index: 100;
+    
     max-width: 1124px;
     width: calc(100% - 40px);
     height: 56px;
     margin: 0 auto;
+    
     background-color: #ffffff;
     border-radius: 12px;
     padding: 16px 24px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto 1fr auto; 
     align-items: center;
     gap: 24px;
     box-sizing: border-box;
 }
 
-.site-header_burger {
+.header__burger {
     display: none;
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
 }
 
-.site-header_nav {
+.header__nav {
     display: flex;
     justify-content: center;
 }
 
-.site-header_logo img {
+.header__logo img {
     height: 24px;
     display: block;
 }
 
-.site-header_nav-list {
+.nav-list {
     display: flex;
     gap: 30px;
     list-style: none;
@@ -56,7 +55,7 @@ body {
     padding: 0;
 }
 
-.site-header_a {
+.nav-list__item a {
     font-size: 15px;
     color: #1F3F68;
     font-weight: 500;
@@ -64,17 +63,17 @@ body {
     transition: color 0.3s;
 }
 
-.site-header_a:hover {
+.nav-list__item a:hover {
     color: #4776E6;
 }
 
-.site-header_contacts {
+.header__contacts {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.site-header_contact-item {
+.contact-item {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -90,11 +89,11 @@ body {
     object-fit: contain;
 }
 
-.site-header_contact-item:hover {
+.contact-item:hover {
     color: #1F3F68;
 }
 
-/* 1-й экран */
+/* HERO */
 
 .hero {
     width: 100%;
@@ -103,7 +102,7 @@ body {
     margin-top: 0;
     height: 640px;
     overflow: hidden;
-    position: relative;
+    position: relative; 
     display: flex;
     align-items: center;
 }
@@ -122,7 +121,7 @@ body {
     flex: 1 1 60%;
 }
 
-.hero_title {
+.hero__title {
     font-size: 48px;
     line-height: 1.2;
     font-weight: 700;
@@ -130,32 +129,32 @@ body {
     margin-bottom: 24px;
 }
 
-.text_blue {
+.text-blue {
     color: #4776E6;
 }
 
-.hero_description {
+.hero__text {
     font-size: 16px;
     color: #000000;
     margin-bottom: 40px;
     line-height: 1.5;
 }
 
-.consultation {
+.hero__form-wrapper {
     background: #ffffff;
-    padding: 30px;
-    border-radius: 16px;
+    padding: 24px;
+    border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-.consultation_description {
+.form-title {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 20px;
     color: #000000;
 }
 
-.consultation_form {
+.contact-form {
     display: flex;
     gap: 15px;
     align-items: flex-end;
@@ -184,7 +183,7 @@ body {
     box-sizing: border-box;
 }
 
-.btn_primary {
+.btn-primary {
     background: #2D66EE;
     color: #fff;
     border: none;
@@ -193,27 +192,24 @@ body {
     text-align: left;
     max-width: 120px;
     white-space: normal;
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 600;
 }
 
 #hero-phone {
     padding-left: 30px;
-    background-image: url("../img/kazahstan.png");
+    background-image: url("../img/kz.png"); 
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 20px 14px;
 }
 
-.hero_phones {
+.hero__phones {
     position: relative;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
     gap: 15px;
     transform: rotate(-12deg);
-    padding-left: 20px;
+    padding-left: 20px; 
     padding-top: 0;
     height: auto;
 }
@@ -226,9 +222,8 @@ body {
     margin: 0;
 }
 
-   /* УСЛУГИ (2-й экран) */
-
-.cycle {
+/* УСЛУГИ */
+.services {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -239,96 +234,95 @@ body {
     box-sizing: border-box;
 }
 
-.cycle_info {
+.services__info {
     flex: 1 1 40%;
 }
 
-.cycle_title {
+.section-title {
     font-size: 36px;
     font-weight: 700;
     color: #000000;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px 0; 
 }
 
-.cycle_subtitle {
+.section-subtitle {
     font-size: 16px;
     color: #010102;
     margin: 0 0 10px 0;
 }
 
-.cycle_categories {
+.services__categories {
     display: flex;
     flex-direction: column;
     margin-top: 0;
 }
 
-.cycle_category h3 {
+.services__category h3 {
     font-size: 20px;
     color: #000000;
     margin-bottom: 16px;
 }
 
-.cycle_list {
+.services-text {
     font-size: 15px;
     color: #0e0f11;
 }
 
-.cycle_list span {
+.services-text span{
     color: #0077ff;
 }
 
-.cycle_links {
+.services__links {
     flex: 1 1 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.cycle_nav {
+.services-nav {
     list-style: none;
     padding: 0;
     margin-top: 0;
 }
 
-.cycle_nav li {
+.services-nav li {
     margin-bottom: 16px;
 }
 
-.cycle_nav a {
+.services-nav a {
     font-size: 16px;
     color: #000000;
     text-decoration: none;
     display: inline-flex;
-    justify-content: flex-start;
+    justify-content: flex-start; 
     align-items: center;
     padding-bottom: 4px;
     border-bottom: 1px solid transparent;
     transition: border-color 0.2s;
 }
 
-.cycle_nav a:hover {
+.services-nav a:hover {
     font-weight: 600;
     border-bottom: 1px solid #004cff;
 }
 
-.cycle_nav a::after {
+.services-nav a::after {
     content: "";
     display: inline-block;
     width: 7px;
-    height: 12px;
-    background-image: url("../img/galka.png");
+    height: 12px; 
+    background-image: url(../img/galka.png); 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 20px;
 }
 
-   /* ПОДВАЛ */
-
-.site-footer {
+/* ПОДВАЛ */
+.footer {
     max-width: 1224px;
     width: calc(100% - 40px);
-    margin: auto auto 20px auto;
+    margin: auto auto auto auto;
     background-color: #101828;
     border-radius: 12px;
     padding: 24px;
@@ -336,31 +330,31 @@ body {
     box-sizing: border-box;
 }
 
-.site-footer_logo {
+.footer__logo {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
 }
 
-.site-footer_logo img {
+.footer__logo img {
     height: 32px;
     display: block;
 }
 
-.site-footer_content {
+.footer__contacts {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
     margin-bottom: 30px;
 }
 
-.site-footer_item {
+.footer-contact-item {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.site-footer_label {
+.footer-contact-label {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -368,76 +362,95 @@ body {
     color: #98A2B3;
 }
 
-.site-footer_link,
-.site-footer_text {
+.footer-contact-value {
     font-size: 16px;
     color: #ffffff;
     font-weight: 500;
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color;
 }
 
-.site-footer_link:hover {
-    color: #4776E6;
-}
-
-.site-footer_copyright {
+.footer__copyright {
     text-align: center;
     font-size: 13px;
     color: #98A2B3;
     padding-top: 20px;
 }
-.footer_down{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color:#FFFFFF;
-    font-size: 13px;
+
+@media (max-width: 1024px) {
+    .header {
+        gap: 15px;
+        padding: 16px;
+    }
+
+    .hero__title {
+        font-size: 40px; 
+    }
+
+    .hero__text {
+        font-size: 15px;
+    }
+
+    .hero__phones {
+        grid-template-columns: 200px 200px;
+        margin-left: 20px;
+    }
+
+    .services {
+        gap: 20px;
+        padding: 0 40px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
 }
 
-   /* ПЛАНШЕТ (≤ 768px) */
-
+/* Планшет */
 @media (max-width: 768px) {
     /* ШАПКА */
-    .site-header {
-        grid-template-columns: auto 1fr auto;
+    .header {
+        grid-template-columns: auto 1fr auto; 
         height: auto;
         padding: 12px 20px;
         gap: 10px;
     }
 
-    .site-header_burger {
+    .header__burger {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
     }
 
-    .site-header_burger img {
+    .header__burger img {
         width: 24px;
         height: auto;
         display: block;
     }
 
-    .site-header_logo {
-        justify-self: center;
+    .header__logo {
+        justify-self: center; 
     }
 
-    .site-header_logo img {
+    .header__logo img {
         height: 20px;
     }
 
-    .site-header_nav,
-    .site-header_contact-phone {
-        display: none;
+    .header__nav,
+    .contact-phone {
+        display: none; 
     }
 
-    .site-header_contacts {
+    .header__contacts {
         justify-self: end;
         gap: 0;
     }
 
-    /* HERO */
+    /* ХИРО */
     .hero {
         height: auto;
         min-height: 500px;
@@ -457,39 +470,39 @@ body {
         z-index: 2;
     }
 
-    .hero_title {
+    .hero__title {
         font-size: 36px;
         margin-bottom: 16px;
     }
 
-    .hero_description {
+    .hero__text {
         font-size: 14px;
         margin-bottom: 24px;
     }
 
-    .consultation {
+    .hero__form-wrapper {
         padding: 20px;
     }
 
-    .consultation_form {
+    .contact-form {
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
     }
 
-    .btn_primary {
-        max-width: fit-content;
+    .btn-primary {
+        max-width:fit-content;
         width: auto;
         white-space: nowrap;
     }
 
-    .hero_phones {
+    .hero__phones {
         position: absolute;
         right: -10%;
         top: 50%;
         inset: 50% auto auto -5;
         transform: translateY(-50%) rotate(-12deg);
-        width: 45%;
+        width: 45%; 
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
@@ -503,63 +516,61 @@ body {
     }
 
     /* УСЛУГИ */
-    .cycle_info {
-        flex: 1 1 60%;
+    .services__info{
+        flex: 1 1 60%
     }
 
     /* ПОДВАЛ */
-    .site-footer {
-        margin: 25px auto;
+    .footer{
+        margin: 25px;
     }
-
-    .site-footer_content {
+    .footer__contacts {
         gap: 15px;
     }
 
-    .site-footer_link,
-    .site-footer_text {
+    .footer-contact-value {
         font-size: 13px;
     }
 
-    .site-footer_label {
+    .footer-contact-label {
         font-size: 11px;
     }
 }
 
-/* МОБИЛА */
 @media (max-width: 426px) {
+    
     /* ШАПКА */
-    .site-header {
+    .header {
         padding: 20px 10px;
         gap: 10px;
     }
 
-    .site-header_burger {
+    .header__burger {
         justify-self: start;
     }
 
-    .site-header_burger img {
+    .header__burger img{
         height: 20px;
         width: 30px;
     }
 
-    .site-header_logo {
+    .header__logo {
         justify-self: center;
     }
 
-    .site-header_logo img {
+    .header__logo img {
         height: 12px;
     }
 
-    .site-header_contacts {
-        display: none;
+    .header__contacts {
+        display: none; 
     }
 
-    /* HERO */
+    /* ХИРО */
     .hero {
-        height: auto;
+        height: auto; 
         padding: 30px 20px 40px;
-        overflow: hidden;
+        overflow: hidden; 
     }
 
     .hero__container {
@@ -572,97 +583,98 @@ body {
         display: contents;
     }
 
-    .hero_title {
+    .hero__title {
         order: 1;
-        font-size: 28px;
+        font-size: 28px; 
         text-align: left;
         margin-bottom: 16px;
     }
 
-    .hero_description {
+    .hero__text {
         order: 2;
         font-size: 14px;
         text-align: left;
         margin-bottom: 40px;
     }
 
-    .hero_phones {
+    .hero__phones {
         order: 3;
         position: static;
         top: auto;
-        right: auto;
+        right: auto;    
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-        transform: rotate(-12deg);
+        transform: rotate(-12deg); 
         width: 80%;
-        margin: 0 auto -60px auto;
+        margin: 0 auto;
+        margin-bottom: -60px;
         z-index: 1;
     }
 
     .phone {
         width: 100%;
         height: auto;
-        object-fit: cover;
+        object-fit: cover; 
         border-radius: 12px;
     }
 
-    .consultation {
+    .hero__form-wrapper {
         order: 4;
         width: 100%;
         margin: 0;
         padding: 24px;
         position: relative;
-        z-index: 10;
-        background: #ffffff;
+        z-index: 10; 
+        background: #ffffff; 
         border-radius: 20px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
         text-align: left;
     }
 
-    .consultation_form {
+    .contact-form {
         flex-direction: column;
         align-items: stretch;
     }
 
-    .btn_primary {
-        width: 100%;
+    .btn-primary {
+        width: 100%; 
         text-align: center;
     }
 
     /* УСЛУГИ */
-    .cycle {
+    .services {
         flex-direction: column;
         gap: 30px;
         margin: 40px auto;
         padding: 0 20px;
     }
 
-    .cycle_title {
-        font-size: 24px;
+    .section-title {
+        font-size: 24px; 
         margin-bottom: 8px;
     }
 
-    .cycle_subtitle {
-        font-size: 13px;
+    .section-subtitle {
+        font-size: 13px; 
         margin-bottom: 16px;
     }
 
-    .cycle_category h3 {
+    .services__category h3 {
         font-size: 16px;
         margin-bottom: 10px;
     }
 
-    .cycle_list {
+    .services-text {
         font-size: 13px;
     }
 
     /* FOOTER */
-    .site-footer_logo img {
+    .footer__logo img {
         height: 20px;
     }
 
-    .site-footer_content {
-        grid-template-columns: 1fr 1fr;
+    .footer__contacts {
+        grid-template-columns: 1fr 1fr; 
     }
 }
