@@ -1,111 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>web_lb3</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="page_background">
-        <header class="site-header">
-            <button class="site-header_burger" aria-label="Открыть меню">
-                <img src="img/menu.webp" alt="Меню">
-            </button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IT WEBSITE</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
 
-            <a href="#" class="site-header_logo">
+        <!-- ШАПКА -->
+        <header class="header">
+            <a href="#" class="header__logo">
                 <img src="img/name.png" alt="IT WEBSITE">
             </a>
 
-            <nav class="site-header_nav" aria-label="Main navigation">
-                <ul class="site-header_nav-list">
-                    <li class="site-header_nav-item"><a href="#services" class="site-header_a">Services</a></li>
-                    <li class="site-header_nav-item"><a href="#media" class="site-header_a">Media</a></li>
-                    <li class="site-header_nav-item"><a href="#cases" class="site-header_a">Cases</a></li>
-                    <li class="site-header_nav-item"><a href="#faq" class="site-header_a">FAQ</a></li>
-                    <li class="site-header_nav-item"><a href="#contacts" class="site-header_a">Contacts</a></li>
+            <nav class="header__nav">
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="#services">Services</a></li>
+                    <li class="nav-list__item"><a href="#media">Media</a></li>
+                    <li class="nav-list__item"><a href="#cases">Cases</a></li>
+                    <li class="nav-list__item"><a href="#faq">FAQ</a></li>
+                    <li class="nav-list__item"><a href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
 
-            <div class="site-header_contacts">
-                <a href="tel:+71111111111" class="site-header_contact-item site-header_contact-phone">
+            <div class="header__contacts">
+                <a href="tel:+71111111111" class="contact-item">
                     <img src="img/phone.png" alt="Телефон" class="contact-icon">
                     <span>+7 (111) 111-11-11</span>
                 </a>
-                <a href="tel:+71111111111" class="site-header_contact-item site-header_contact-phone">
+                <a href="tel:+71111111111" class="contact-item">
                     <span>+7 (111) 111-11-11</span>
                 </a>
-                <a href="mailto:itcompany@mail.com" class="site-header_contact-item site-header_contact-email">
+                <a href="mailto:itcompany@mail.com" class="contact-item">
                     <img src="img/email.png" alt="Почта" class="contact-icon">
                     <span>itcompany@mail.com</span>
                 </a>
             </div>
         </header>
-        <hr>
-        <main class="main-content">
+
+        <main>
+
+            <!-- HERO -->
             <section class="hero" id="hero">
-                <h1 class="hero_title">
-                    Development of <span class='text_blue'> mobile applications </span>and <span class='text_blue'>web services </span>of any complexity
-                </h1>
-                <p class="hero_description">
-                    We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices
-                </p>
+                <div class="hero__container">
+                    <div class="hero__content">
+                        <h1 class="hero__title">
+                            Development of <span class="text-blue">mobile applications</span> and <span class="text-blue">web services</span> of any complexity
+                        </h1>
+                        <p class="hero__text">We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices.</p>
+
+                        <div class="hero__form-wrapper">
+                            <h3 class="form-title">Leave your contacts and we will call you back within 30 minutes</h3>
+                            <form action="#" class="contact-form">
+                                <div class="form-group">
+                                    <label for="hero-phone">Phone number</label>
+                                    <input type="tel" id="hero-phone" name="phone" placeholder="+7 (111) 111-11-11">
+                                </div>
+                                <div class="form-group">
+                                    <label for="hero-name">Full name</label>
+                                    <input type="text" id="hero-name" name="name" placeholder="Иван Иванов">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Get <br> consultation</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </section>
             <hr>
-            <section class="consultation" id="consultation">
-                <p class="consultation_description">
-                    Leave your contacts and we will call you back within 15 minutes.
-                </p>
-                <form class="consultation_form">
-                    <div class="consultation_fields">
-                        <div class="form-group">
-                            <label class="form-group_label">
-                                Phone number
-                            </label>
-                            <div class="input_flag">
-                                <img src="img/kazahstan.png" class="flag-icon">
-                                <input type="tel" placeholder="+7 (___) ___ __ __">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-group_label">
-                                Full name
-                            </label>
-                            <input type="text" placeholder="Ivan Ivanov">
-                        </div>
-                        <button class="btn_primary" type="submit">
-                            Get consultation
-                        </button>
-                    </div>
-
-                </form>
-            </section>
         </main>
-    </div>
-    <hr>
-    <footer class="site-footer">
-        <h2 class="site-footer_logo">IT WEBSITE</h2>
-        <div class="site-footer_content">
-            <div class="site-footer_item">
-                <span class="site-footer_label">Contact nums</span>
-                <a href="tel:+77783959026" class="site-footer_link">+7 (778) 395 90 26</a>
+        <!--  ПОДВАЛ  -->
+        <footer class="footer" id="contacts">
+            <div class="footer__logo">
+                <img src="img/name-footer.png" alt="IT WEBSITE">
             </div>
-            <div class="site-footer_item">
-                <span class="site-footer_label">Post</span>
-                <a href="mailto:mail@mail.com" class="site-footer_link">mail@mail.com</a>
+
+            <div class="footer__contacts">
+                <div class="footer-contact-item">
+                    <span class="footer-contact-label">Contact number</span>
+                    <a href="tel:+77783659026" class="footer-contact-value">+7 (778) 385 90 26</a>
+                </div>
+                <div class="footer-contact-item">
+                    <span class="footer-contact-label">Post</span>
+                    <a href="mailto:mail@mail.com" class="footer-contact-value">mail@mail.com</a>
+                </div>
+                <div class="footer-contact-item">
+                    <span class="footer-contact-label">Address</span>
+                    <span class="footer-contact-value">City city, street st. 90</span>
+                </div>
+                <div class="footer-contact-item">
+                    <span class="footer-contact-label">Leave a request</span>
+                    <a href="#" class="footer-contact-value">Leave a request</a>
+                </div>
             </div>
-            <div class="site-footer_item">
-                <span class="site-footer_label">Address</span>
-                <p class="site-footer_text">City city, street st. 90</p>
-            </div>
-            <div class="site-footer_item">
-                <span class="site-footer_label">Leave a request</span>
-                <a href="#" class="site-footer_link">Leave a request</a>
-            </div>
-        </div>
-        <div class="footer_down">
-            <img src="img/footer_info.png">
-            <span>We work throughout world</span>
-        </div>
-    </footer>
-</body>
+
+            <p class="footer__copyright">We work throughout world</p>
+        </footer>
+
+    </body>
 </html>
